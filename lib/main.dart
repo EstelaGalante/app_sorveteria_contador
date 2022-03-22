@@ -4,7 +4,7 @@ void main() {
   runApp(const MyApp());
 }
 
-
+//teste
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       home: Container(
       color: Colors.red,
       alignment: Alignment.center,
-        child: const Text('Olá mundo!'),
+        child: const Text('Olá mundo 2!'),
       ),
     );
   }
