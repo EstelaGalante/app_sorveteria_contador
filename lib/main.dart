@@ -40,8 +40,8 @@ class _HomePageState extends State<HomePage> {
     print(count);
   }
 
-  bool get isEmpty => count ==0;
-  bool get isFull => count ==20;
+  bool get isEmpty => count == 0;
+  bool get isFull => count == 20;
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +63,7 @@ class _HomePageState extends State<HomePage> {
               isFull ? 'Lotado' : 'Pode entrar!',
               style: const TextStyle(
                 fontSize: 50,
-                color: Colors.purple,
+                color: Colors.black87,
                 fontWeight: FontWeight.w800,
               ),
             ),
@@ -72,8 +72,8 @@ class _HomePageState extends State<HomePage> {
               child: Text(
                 count.toString(),
                 style: TextStyle(
-                    fontSize: 100,
-                    color: isFull ? Colors.red : Colors.purple,
+                  fontSize: 100,
+                  color: isFull ? Colors.red : Colors.black87,
                 ),
               ),
             ),
@@ -83,7 +83,8 @@ class _HomePageState extends State<HomePage> {
                 TextButton(
                   onPressed: isEmpty ? null : decrement,
                   style: TextButton.styleFrom(
-                    backgroundColor: isEmpty ? Colors.black26 : Colors.purple,
+                    backgroundColor:
+                        isEmpty ? Colors.black26 : Colors.amber[900],
                     fixedSize: const Size(100, 100),
                     primary: Colors.black,
                     shape: RoundedRectangleBorder(
@@ -102,7 +103,8 @@ class _HomePageState extends State<HomePage> {
                 TextButton(
                   onPressed: isFull ? null : increment,
                   style: TextButton.styleFrom(
-                    backgroundColor: isFull ? Colors.black26 : Colors.purple,
+                    backgroundColor:
+                        isFull ? Colors.black26 : Colors.amber[900],
                     fixedSize: const Size(100, 100),
                     primary: Colors.black,
                     shape: RoundedRectangleBorder(
@@ -125,5 +127,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
-
